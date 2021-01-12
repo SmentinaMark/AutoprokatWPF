@@ -1,0 +1,36 @@
+﻿<Window x:Class="ИСС_Автопрокат.MyWindow.ManufacturersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ИСС_Автопрокат.MyWindow"
+        mc:Ignorable="d"
+        Title="ManufacturersWindow" Height="450" Width="948" ResizeMode="NoResize">
+    <DataGrid x:Name="DataGridManufacturer" Style="{StaticResource DataGrids}" AutoGenerateColumns="False" ColumnWidth="*" Margin="0,0,0,2">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Id" Binding="{Binding ID_Manufacturer}" Width="30"/>
+            <DataGridTextColumn Header="Название" Binding="{Binding Name_Manufacturer}"/>
+            <DataGridTextColumn Header="Страна" Binding="{Binding Country_Manufacturer}"/>
+            <DataGridTextColumn Header="Город" Binding="{Binding City_Manufacturer}"/>
+            <DataGridTextColumn Header="Улица" Binding="{Binding Street_Manufacturer}"/>
+            <DataGridTextColumn Header="№ дома" Binding="{Binding HouseNumber_Manufacturer}"/>
+            <DataGridTextColumn Header="Код продукта" Binding="{Binding CodeProduct_Manufacturer}"/>
+            <DataGridTemplateColumn Width="200">
+                <DataGridTemplateColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="Действия"/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.HeaderTemplate>
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="addBtn" Content="Добавить" Click="addBtn_Click"/>
+                            <Button x:Name="delBtn" Content="Удалить" Click="delBtn_Click"/>
+                            <Button x:Name="updBtn" Content="Изменить" Click="updBtn_Click"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>

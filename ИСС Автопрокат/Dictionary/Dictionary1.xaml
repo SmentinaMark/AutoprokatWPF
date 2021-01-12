@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ИСС_Автопрокат.Dictionary.Dictionary">
+    <Style x:Key="MainWindowButtons">
+        <Setter Property="Button.Width" Value="215"/>
+        <Setter Property="Button.Height" Value="50"/>
+        <Setter Property="Button.FontSize" Value="20"/>
+        <Setter Property="Button.FontFamily" Value="Century Gothic"/>
+        <Setter Property="Button.Cursor" Value="Hand"/>
+    </Style>
+    <Style x:Key="LeftPanelButtons" BasedOn="{StaticResource MainWindowButtons}">
+        <Setter Property="Button.HorizontalAlignment" Value="Left"/>
+        <Setter Property="Button.FontSize" Value="16"/>
+    </Style>
+    <Style x:Key="HeadLabelPages">
+        <Setter Property="Label.HorizontalAlignment" Value="Left"/>
+        <Setter Property="Label.VerticalAlignment" Value="Top"/>
+        <Setter Property="Label.Foreground" Value="#FFFF7F50"/>
+        <Setter Property="Label.FontSize" Value="25"/>
+        <Setter Property="Label.Margin" Value="31,0,0,0"/>
+    </Style>
+    <Style x:Key="DataGrids">
+        <Setter Property="DataGrid.Margin" Value="170,0,0,150"/>
+        <Setter Property="DataGrid.GridLinesVisibility" Value="Horizontal"/>
+        <Setter Property="DataGrid.HeadersVisibility" Value="Column"/>
+        <Setter Property="DataGrid.BorderBrush" Value="Black"/>
+        <Setter Property="DataGrid.FontSize" Value="14"/>
+        <Setter Property="DataGrid.FontFamily" Value="Century Gothic"/>
+        <Setter Property="DataGrid.CanUserReorderColumns" Value="False"/>
+        <Setter Property="DataGrid.HorizontalGridLinesBrush" Value="#FFE6E6E6"/>
+        <Setter Property="DataGrid.AlternatingRowBackground" Value="#FFF0F0F0"/>
+    </Style>
+</ResourceDictionary>

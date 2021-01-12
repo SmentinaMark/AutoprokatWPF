@@ -1,0 +1,24 @@
+﻿<Window x:Class="ИСС_Автопрокат.MyWindow.AddClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ИСС_Автопрокат.MyWindow"
+        mc:Ignorable="d"
+        Title="Добавить нового клиента" Height="281" Width="333" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="18,20,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" FontFamily="Century Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,49,0,0" TextWrapping="Wrap" Text="Страна" VerticalAlignment="Top" FontFamily="Century Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,77,0,0" TextWrapping="Wrap" Text="Город" VerticalAlignment="Top" FontFamily="Century Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,104,0,0" TextWrapping="Wrap" Text="Улица" VerticalAlignment="Top" FontFamily="Century Gothic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,133,0,0" TextWrapping="Wrap" Text="№ дома" VerticalAlignment="Top" FontFamily="Century Gothic"/>
+        <TextBox x:Name="Nametbx" HorizontalAlignment="Left" Height="23" Margin="105,19,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" FontFamily="Century Gothic" MaxLength="20" />
+        <TextBox x:Name="Countrytbx" HorizontalAlignment="Left" Height="23" Margin="105,48,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" FontFamily="Century Gothic" MaxLength="8"/>
+        <TextBox x:Name="Citytbx" HorizontalAlignment="Left" Height="23" Margin="105,76,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" FontFamily="Century Gothic" MaxLength="20"/>
+        <TextBox x:Name="Streettbx" HorizontalAlignment="Left" Height="23" Margin="105,103,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" FontFamily="Century Gothic" MaxLength="20"/>
+        <TextBox x:Name="numHtbx" HorizontalAlignment="Left" Height="23" Margin="105,132,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="190" FontFamily="Century Gothic" MaxLength="3"/>
+        <Button x:Name="btnClose" Content="Закрыть" HorizontalAlignment="Left" Margin="165,180,0,0" VerticalAlignment="Top" Width="143" Height="52" Click="btnClose_Click" FontSize="14" FontFamily="Century Gothic"/>
+        <Button x:Name="btnAdd" Content="Добавить" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="143" Height="52" Click="btnAdd_Click" FontSize="14" FontFamily="Century Gothic"/>
+
+    </Grid>
+</Window>
